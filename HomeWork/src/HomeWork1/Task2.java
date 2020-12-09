@@ -24,7 +24,7 @@ public class Task2 {
         System.out.println("2.6: " + ((5 + 7 > 20 ? 68 : 22 * 2 >> b++) / --a));
         a = 8;
         b = 2;
-        //System.out.println("2.7" + (5 + 7 > 20 ? 68 >= 68 : 22 * b >> b++) / --a);
+        System.out.println("2.7: " + (5 + 7 > 20 ? 68 >= 68 : 22 * b >> b++ / --a));
         a = 8;
         b = 2;
         System.out.println("2.8: " + (6 - b > 3 && 12 * 12 <= 119));

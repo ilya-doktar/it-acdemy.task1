@@ -2,7 +2,7 @@ package HomeWork1;
 
 public class BitOperations {
     public static void main(String[] args) {
-
+//задание 1 
     //1.2.все возможные побитовые операции с 42 и 15
        int  a  = 42, b = 15;// в двоичной а = 101010, b = 1100011
         System.out.println(a&b);//вывод будет десять 101010 & 1111 =  1010(10 в десятичной) И
