@@ -1,4 +1,4 @@
-package HomeWork2;
+package HomeWork2.arrays;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -12,6 +12,8 @@ public class Arrays2_1 {
         System.out.println(Arrays.toString(getReversElements(container)));
 
     }
+
+    
     public static int[] arrayFromConsole(){
         Scanner in = new Scanner(System.in);
         System.out.print("введите длину массива: ");

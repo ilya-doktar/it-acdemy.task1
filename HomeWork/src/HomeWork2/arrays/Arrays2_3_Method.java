@@ -1,16 +1,9 @@
-package HomeWork2;
+package HomeWork2.arrays;
 
 import java.util.Arrays;
 import java.util.Random;
 
-public class Arrays2_4 {
-    public static void main(String[] args) {
-        int[] container = {-1,2,4,-6,68,32,-43,-44,85};
-        System.out.println(getSumEvenElements(container));
-        System.out.println(getMaxValueEven(container));
-        System.out.println(Arrays.toString(getElementsGreaterThanAvg(container)));
-        System.out.println(Arrays.toString(getTwoMinElements(container)));
-    }
+public class Arrays2_3_Method {
 
     public static int  getSumEvenElements ( int[] a ){
        int result = 0;
@@ -21,7 +14,6 @@ public class Arrays2_4 {
            System.out.print(a[i]+" ");
 
        }
-        System.out.println("\nCумма четных положительных элементов: ");
         return result;
    }
     public static int getMaxValueEven(int[] a){
@@ -75,14 +67,5 @@ public class Arrays2_4 {
         }
         return sum;
     }
-//    public static int[] compressArray(int[] a){
-//        int i = 0;
-//        while (i < m)
-//            if (a[i] <= h && a[i] >= l) {
-//                m -= 1;
-//                for (j=i; j < m; j++)
-//                    a[j] = a[j+1];
-//            } else
-//                i += 1;
-//    }
+
 }

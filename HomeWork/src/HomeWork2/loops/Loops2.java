@@ -1,4 +1,4 @@
-package HomeWork2;
+package HomeWork2.loops;
 
 import java.util.Objects;
 
