@@ -4,10 +4,11 @@ import java.util.Objects;
 
 public class Loops2 {
     public static void main(String[] args) {
-        System.out.println(getMultiply(412321253));
+        System.out.println(getMultiply(2123));
     }
     public static String getMultiply(int a){
-        if( a % a !=0){
+
+        if( a == (double)a){
             System.out.println("Введено не целое число");
             return "";
         }

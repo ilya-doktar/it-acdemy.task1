@@ -4,7 +4,7 @@ public class Loops1 {
 
 
         public static void main(String[] args) {
-            System.out.println(" = " + getMultiply(9));//1.1.1
+            System.out.println(" = " + getMultiply(10));//1.1.1
             //       System.out.println(" = " + getFactorial(5));
 
         }
