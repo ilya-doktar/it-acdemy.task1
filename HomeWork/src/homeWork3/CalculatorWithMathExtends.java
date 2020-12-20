@@ -1,6 +1,6 @@
 package homeWork3;
 
-public class CalculatorWithMathExtends extends CalculatorWithOperator {
+public class CalculatorWithMathExtends extends CalculatorWithOperator implements ICalculator {
     public double getPow(double a, int b){
         double result = Math.pow(a,b);
         return result;

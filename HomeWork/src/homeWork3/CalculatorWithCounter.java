@@ -1,6 +1,24 @@
 package homeWork3;
 
-public class CalculatorWithOperator implements ICalculator{
+import java.util.Objects;
+
+public class CalculatorWithCounter extends CalculatorWithOperator{
+
+    private Object calculator;
+
+    public CalculatorWithCounter(){
+
+    }
+    public CalculatorWithCounter(CalculatorWithOperator calculator){
+        this.calculator = calculator;
+    }
+    public CalculatorWithCounter(CalculatorWithMathCopy calculator){
+        this.calculator = calculator;
+    }
+    public CalculatorWithCounter(CalculatorWithMathExtends calculator){
+        this.calculator = calculator;
+    }
+
     public long count = 0;
 
     public double getDiv(double a, double b){
@@ -38,9 +56,9 @@ public class CalculatorWithOperator implements ICalculator{
     }
 
     public int getAbs(int a){
-       int result = (a < 0) ? -a : a;
+        int result = (a < 0) ? -a : a;
         count++;
-       return result;
+        return result;
     }
 
     public double getSqrt(double a){
@@ -49,4 +67,8 @@ public class CalculatorWithOperator implements ICalculator{
         return result;
     }
 
+    public long getCountOperation(){
+
+        return count++;
+    }
 }

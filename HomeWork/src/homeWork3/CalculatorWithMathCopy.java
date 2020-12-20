@@ -1,6 +1,6 @@
 package homeWork3;
 
-public class CalculatorWithMathCopy {
+public class CalculatorWithMathCopy implements ICalculator{
     public double getDiv(double a, double b){
         double result;
         result = a / b;
