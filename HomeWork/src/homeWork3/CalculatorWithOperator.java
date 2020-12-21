@@ -1,6 +1,6 @@
 package homeWork3;
 
-public class CalculatorWithOperator implements ICalculator{
+public class CalculatorWithOperator  implements ICalculator{
     public long count = 0;
 
     public double getDiv(double a, double b){
@@ -39,7 +39,7 @@ public class CalculatorWithOperator implements ICalculator{
 
     public int getAbs(int a){
        int result = (a < 0) ? -a : a;
-        count++;
+       count++;
        return result;
     }
 
