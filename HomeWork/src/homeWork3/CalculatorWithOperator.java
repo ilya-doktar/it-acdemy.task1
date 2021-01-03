@@ -1,6 +1,7 @@
 package homeWork3;
 
 public class CalculatorWithOperator  implements ICalculator{
+
     public long count = 0;
 
     public double getDiv(double a, double b){
