@@ -10,7 +10,7 @@ public class BookMain {
         FileReader fr = new FileReader("D:\\book.txt");
         Scanner scan = new Scanner(fr);
         String withoutPP = scan.nextLine().replaceAll("\\pP", "");
-        String[] words = withoutPP.split("\\s+^\\s*$");
+        String[] words = withoutPP.split("^\\s+$");
         Set<String> uniqWords = new LinkedHashSet<>(Arrays.asList(words));
         Map words10 = new HashMap();
         SortMap bvc = new SortMap(words10);
