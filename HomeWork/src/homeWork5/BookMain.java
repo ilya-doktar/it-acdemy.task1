@@ -9,12 +9,12 @@ public class BookMain {
     public static void main(String[] args) throws Exception {
         FileReader fr = new FileReader("D:\\book.txt");
         Scanner scan = new Scanner(fr);
-        String withoutPP = scan.nextLine().replaceAll("\\pP", "");
-        String[] words = withoutPP.split("^\\s+$");
-        Set<String> uniqWords = new LinkedHashSet<>(Arrays.asList(words));
         Map words10 = new HashMap();
         SortMap bvc = new SortMap(words10);
         TreeMap<String,Integer> top10 = new TreeMap<>(bvc);
+        String withoutPP = scan.nextLine().replaceAll("\\pP", "");
+        String[] words = withoutPP.split("\\s+");
+        Set<String> uniqWords = new LinkedHashSet<>(Arrays.asList(words));
 
         for(String word : uniqWords){
             int count = 0;
@@ -27,6 +27,8 @@ public class BookMain {
         }
 
          top10.putAll(words10);
+
+
         int i = 0;
         for (Map.Entry<String, Integer> element : top10.entrySet())
         {
